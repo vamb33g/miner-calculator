@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.input-section {
+  margin: 20px 0;
+}
+
+.miner-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.miner-table th,
+.miner-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.miner-table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.miner-table tr:nth-child(even) {
+  background-color: #51525c;
+}
+
+.miner-table tr:hover {
+  background-color: #338eac;
+}
+
+/* Styles pour petit écran */
+@media (max-width: 640px) {
+  .miner-table th, .miner-table td {
+    padding: 8px;
+    font-size: 0.875rem;
+  }
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+
+  .miner-table th {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+  }
+
+  .miner-table td {
+    color: #f0f0f0;
+  }
+
+  .miner-table tr:hover {
+    background-color: #333;
+  }
+}
